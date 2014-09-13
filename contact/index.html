@@ -6,10 +6,11 @@
     <link href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/shift.css" rel="stylesheet">
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="http://s3.amazonaws.com/codecademy-content/courses/ltp/css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/font-awesome.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/font-awesome.css">
+    <link rel="stylesheet" href="/css/font-awesome.min.css">
+    <form class="contact" method="post" action="mail.php">
     
   </head>
 
@@ -18,30 +19,46 @@
       <div class="container">
       <ul class="nav nav-pills">
         <li><a href="http://taehyoung.com">Home</a></li>
-        <li class = "active"><a href="about.html">About</a></li>
+        <li><a href="http://taehyoung.com/about">About</a></li>
         <li><a href="http://blog.taehyoung.com">Blog</a></li>
       <ul class = "pull-right">
       <ul class="nav nav-pills">
-        <li><a href="contact.html">Contact</a></li>
+        <li class = "active"><a href="http://taehyoung.com/contact">Contact</a></li>
       </ul>
       </ul>
-    </ul>
+  </ul>
       </div>
     </div>
     
+		
+	<div class="container">
 
-    <div class= "container">
-
-      <h2> Working on this page</h2>
-      <h3>
-      <ul class="fa-ul">
-  <li><i class="fa-li fa fa-check-square"></i>check</li>
-  <li><i class="fa-li fa fa-check-square"></i>check</li>
-  <li><i class="fa-li fa fa-spinner fa-spin"></i>working</li>
-  <li><i class="fa-li fa fa-square"></i>to-do</li>
-</ul>
-</h3>
-   </div>
+	<h2><i class="fa fa-envelope fa-2x"></i></a>  Contact Form</h2>
+		
+		<p class="name">
+			<input type="text" name="name" id="name" placeholder="Your Name" />
+			<label for="name">Name</label>
+		</p>
+		
+		<p class="email">
+			<input type="email" name="email" id="email" placeholder="mail@example.com" />
+			<label for="email">Email</label>
+		</p>
+		
+		<p class="subject">
+			<input type="text" name="subject" id="subject" placeholder="Subject" />
+			<label for="subject">Subject</label>
+		</p>		
+	
+		<p class="text">
+			<textarea name="message" placeholder="Write here" /></textarea>
+		</p>
+		
+		<p class="submit">
+			<input type="submit" value="Submit" />
+		</p>
+	</form>
+</div>
    <div class ="container">
   <footer class="mainFooter">
     <p>Copyright &copy; 2014 <a href ="http://taehyoung.com"> Taehyoung Kim</a></p>
@@ -52,5 +69,8 @@
   </ul>
   </footer>
   </div>
-  </body>
-  </html>
+
+</body>
+
+</html>
+
