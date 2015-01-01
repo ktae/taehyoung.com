@@ -12,7 +12,7 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <style>
         body {
-            background: url(/src/img/bg.jpg) no-repeat center center fixed;
+            background: url(/src/img/bg-darken.jpg) no-repeat center center fixed;
             font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
         }
         .center {
@@ -22,16 +22,41 @@
         .dropdown-menu {
             text-align: left;
         }
+        .footer {
+        color: white;
+   			position:fixed;
+  			bottom:0;
+  			text-align: center ;
+  			font-size: 14px ;
+  			font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
+  			width: 600px ;
+  			height: 50px ;
+		}
+		.btn-default{
+		    background: rgba(255, 255, 255, 0.3);
+		    font-weight: 700px;
+		    color: white;
+		}
+		.korea {
+			width : 200px;
+			height: 250px;
+		}
+		.link {
+			color : white;
+			font-weight: 700px;
+		}
     </style>
   </head>
   <body>
     <div class="center">
-      <div style="margin-top: 150px; font-size:100px; color: #FFFFFF; font-weight: 100">Taehyoung Kim</div>
+	<img style = "margin-top: 25px" class = "korea" src="src/img/korea.png" alt="Korea" >
+      <div style="padding-top: 0.5px; font-size:100px; color: #FFFFFF; font-weight: 100">Taehyoung Kim</div>
+      <!-- <img class = "korea" src="src/img/korea.png" alt="Korea" align="middle"> -->
       <div class="btn-group" style="margin: 0;">
         <a class="btn btn-info" href="https://twitter.com/tkim99">Twitter</a>
         <a class="btn btn-primary" href="https://facebook.com/tkim0120">Facebook</a>
         <a class="btn btn-success" href="http://github.com/poupao">Github</a>
-        <div class="btn-group">
+        <div class="btn-group animate">
           <a class="btn btn-warning">Misc</a>
           <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
             <span class="caret"></span>
@@ -39,14 +64,26 @@
           </button>
           <ul class="dropdown-menu" role="menu">
             <li><a href="http://blog.taehyoung.com">Blog</a></li>
+            <li><a href="http://md.taehyoung.com">Markdown</a></li>
           </ul>
         </div>
       </div>
     </div>
+    <div class ="footer">
+    	<ul class="nav nav-pills">
+    		<li class="pull-left">
+    			<a style = "margin-left: 10px"class="btn btn-default btn-sm" href="http://taehyoung.com" role="button">&copy 2015 Taehyoung Kim</a> 
+    		</li>
+    		<li class="dropup">
+    		<!-- <a class="btn btn-default btn-sm" href="mailto:me@taehyoung.com" role="button">Contact</a>  -->
+    		<a class = "link" href="mailto:me@taehyoung.com"> Contact </a>
+    		</li>
+    	</ul>
+    </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- jQuery -->
     <script src="//code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- Bootstrap-->
     <script src="/src/js/bootstrap.min.js"></script>
   </body>
 </html>

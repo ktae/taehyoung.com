@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)http://assemble.io/docs/Cheatsheet-Markdown.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" Static site generator for Grunt.js and Yeoman. Assemble makes it dead simple to build modular sites, blogs, gh-pages, components and documentation from reusable templates and data.">
+    <meta name="author" content="http://twitter.com/jonschlinkert">
+    <title>
+      Markdown Cheatsheet
+    </title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="http://assemble.io/assets/css/assemble.css">
+    <link rel="stylesheet" href="http://assemble.io/assets/css/gist.css">
+
+    <!-- Webfonts -->
+    <link href="./Markdown Cheatsheet_files/css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+
+    <!--[if lt IE 9]>
+  <script src="../assets/js/html5shiv.js"></script>
+  <script src="../assets/js/respond/respond.min.js"></script>
+<![endif]-->
+
+    <!-- Favicons -->
+    <script type="text/javascript" async="" src="http://www.google-analytics.com/plugins/ga/inpage_linkid.js" id="undefined"></script><script type="text/javascript" src="./Markdown Cheatsheet_files/sidebarv2.js"></script><script id="twitter-wjs" src="./Markdown Cheatsheet_files/widgets.js"></script><script type="text/javascript" async="" src="./Markdown Cheatsheet_files/dc.js"></script><script type="text/javascript">
+      var _gaq = _gaq || [];
+      var pluginUrl =
+        '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+      _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+      _gaq.push(['_setAccount', 'UA-33358518-5']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    <style>
+  .sidebar {
+    position: fixed;
+    top:70px;
+    width:228px;
+  }
+    </style>
+  <style id="holderjs-style" type="text/css">.holderjs-fluid {font-size:16px;font-weight:bold;text-align:center;font-family:sans-serif;margin:0}</style></head>
+  <body style="background: white;" data-spy="scroll" data-target=".bs-sidebar" data-twttr-rendered="true">
+    <div class="container">
+      <div class="row">
+      <div class="col col-lg-3">
+          <div class="sidebar">
+            <ul class="nav nav-pills nav-stacked">
+              <li>
+                <a href="http://taehyoung.com" onclick="_gaq.push(['_trackEvent', 'Sidenav', 'clicked']);">Homepage</a> 
+              </li>
+            </ul>
+            <span class="nav-section-title">
+              Sections
+            </span> 
+            <ul class="nav nav-pills nav-stacked">
+              <li>
+                <a href="#typography" onclick="_gaq.push(['_trackEvent', 'Sidenav', 'clicked']);">Typography</a> 
+              </li>
+               <li>
+                <a href="#lists" onclick="_gaq.push(['_trackEvent', 'Sidenav', 'clicked']);">Lists</a> 
+              </li>
+              <li>
+                <a href="#code" onclick="_gaq.push(['_trackEvent', 'Sidenav', 'clicked']);">Code</a> 
+              </li>
+              <li>
+                <a href="#tables" onclick="_gaq.push(['_trackEvent', 'Sidenav', 'clicked']);">Tables</a> 
+              </li>
+              <li>
+                <a href="#links" onclick="_gaq.push(['_trackEvent', 'Sidenav', 'clicked']);">Links</a> 
+              </li>
+              <li>
+                <a href="#images" onclick="_gaq.push(['_trackEvent', 'Sidenav', 'clicked']);">Images</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col col-lg-9">
+          <div class="panel panel-docs">
+            <h1>Markdown Cheatsheet</h1> 
+            <blockquote>
+              <p>This cheatsheet is rendered from
+                <a href="https://gist.github.com/jonschlinkert/5854601">a Gist</a>
+              and forked from the <code> <a href="http://assemble.io/docs/Cheatsheet-Markdown.html"> Assemble.io website</a></code>
+            </blockquote>
+            <h3 id="download-cheatsheet">Grab this Cheatsheet</h3> 
+            <ul>
+              <li>
+                <a href="https://gist.github.com/jonschlinkert/5854601/download">Download the cheatsheet</a> 
+              </li>
+            </ul>
+            <p>
+              <br>
+              <br>
+            </p>
+        <div class="gist-file">
+          <div class="gist-data gist-syntax">
+            
+
+    <div class="readme context-loader-container context-loader-overlay">
+      <article class="markdown-body js-file " data-task-list-update-url="https://gist.github.com/jonschlinkert/5854601/file/markdown.md">
+        <h1 id = "typography"> Typography</h1>
+
+<h2>
+<a name="user-content-headings" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#headings" rel="noreferrer"><span class="octicon octicon-link"></span></a>Headings</h2>
+
+<p>Headings from <code>h1</code> through <code>h6</code> are constructed with a <code>#</code> for each level:</p>
+
+<div class="highlight highlight-markdown"><pre># h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading</pre></div>
+
+<p>Renders to:</p>
+
+<h1>
+<a name="user-content-h1-heading" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#h1-heading" rel="noreferrer"><span class="octicon octicon-link"></span></a>h1 Heading</h1>
+
+<h2>
+<a name="user-content-h2-heading" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#h2-heading" rel="noreferrer"><span class="octicon octicon-link"></span></a>h2 Heading</h2>
+
+<h3>
+<a name="user-content-h3-heading" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#h3-heading" rel="noreferrer"><span class="octicon octicon-link"></span></a>h3 Heading</h3>
+
+<h4>
+<a name="user-content-h4-heading" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#h4-heading" rel="noreferrer"><span class="octicon octicon-link"></span></a>h4 Heading</h4>
+
+<h5>
+<a name="user-content-h5-heading" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#h5-heading" rel="noreferrer"><span class="octicon octicon-link"></span></a>h5 Heading</h5>
+
+<h6>
+<a name="user-content-h6-heading" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#h6-heading" rel="noreferrer"><span class="octicon octicon-link"></span></a>h6 Heading</h6>
+
+<p>HTML:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">h1</span>&gt;h1 Heading&lt;/<span class="pl-ent">h1</span>&gt;
+&lt;<span class="pl-ent">h2</span>&gt;h2 Heading&lt;/<span class="pl-ent">h2</span>&gt;
+&lt;<span class="pl-ent">h3</span>&gt;h3 Heading&lt;/<span class="pl-ent">h3</span>&gt;
+&lt;<span class="pl-ent">h4</span>&gt;h4 Heading&lt;/<span class="pl-ent">h4</span>&gt;
+&lt;<span class="pl-ent">h5</span>&gt;h5 Heading&lt;/<span class="pl-ent">h5</span>&gt;
+&lt;<span class="pl-ent">h6</span>&gt;h6 Heading&lt;/<span class="pl-ent">h6</span>&gt;</pre></div>
+
+<p><br>
+<br>
+<br></p>
+
+<h2>
+<a name="user-content-horizontal-rules" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#horizontal-rules" rel="noreferrer"><span class="octicon octicon-link"></span></a>Horizontal Rules</h2>
+
+<p>The HTML <code>&lt;hr&gt;</code> element is for creating a "thematic break" between paragraph-level elements. In markdown, you can create a <code>&lt;hr&gt;</code> with any of the following:</p>
+
+<ul class="task-list">
+<li>
+<code>___</code>: three consecutive underscores</li>
+<li>
+<code>---</code>: three consecutive dashes</li>
+<li>
+<code>***</code>: three consecutive asterisks</li>
+</ul>
+
+<p>renders to:</p>
+
+<hr>
+
+<hr>
+
+<hr>
+
+<p><br>
+<br>
+<br></p>
+
+<h2>
+<a name="user-content-body-copy" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#body-copy" rel="noreferrer"><span class="octicon octicon-link"></span></a>Body Copy</h2>
+
+<p>Body copy written as normal, plain text will be wrapped with <code>&lt;p&gt;&lt;/p&gt;</code> tags in the rendered HTML.</p>
+
+<p>So this body copy:</p>
+
+<div class="highlight highlight-markdown"><pre>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</pre></div>
+
+<p>renders to this HTML:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">p</span>&gt;Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.&lt;/<span class="pl-ent">p</span>&gt;</pre></div>
+
+<p><br>
+<br>
+<br></p>
+
+<h2>
+<a name="user-content-emphasis" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#emphasis" rel="noreferrer"><span class="octicon octicon-link"></span></a>Emphasis</h2>
+
+<h3>
+<a name="user-content-bold" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#bold" rel="noreferrer"><span class="octicon octicon-link"></span></a>Bold</h3>
+
+<p>For emphasizing a snippet of text with a heavier font-weight.</p>
+
+<p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
+
+<div class="highlight highlight-markdown"><pre><span class="pl-mb">**rendered as bold text**</span></pre></div>
+
+<p>renders to:</p>
+
+<p><strong>rendered as bold text</strong></p>
+
+<p>and this HTML</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">strong</span>&gt;rendered as bold text&lt;/<span class="pl-ent">strong</span>&gt;</pre></div>
+
+<h3>
+<a name="user-content-italics" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#italics" rel="noreferrer"><span class="octicon octicon-link"></span></a>Italics</h3>
+
+<p>For emphasizing a snippet of text with italics.</p>
+
+<p>The following snippet of text is <em>rendered as italicized text</em>.</p>
+
+<div class="highlight highlight-markdown"><pre><span class="pl-mi">_rendered as italicized text_</span></pre></div>
+
+<p>renders to:</p>
+
+<p><em>rendered as italicized text</em></p>
+
+<p>and this HTML:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">em</span>&gt;rendered as italicized text&lt;/<span class="pl-ent">em</span>&gt;</pre></div>
+
+<h3>
+<a name="user-content-strikethrough" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#strikethrough" rel="noreferrer"><span class="octicon octicon-link"></span></a>strikethrough</h3>
+
+<p>In GFM you can do strickthroughs. </p>
+
+<div class="highlight highlight-markdown"><pre>~~Strike through this text.~~</pre></div>
+
+<p>Which renders to:</p>
+
+<p><del>Strike through this text.</del></p>
+
+<p><br>
+<br>
+<br></p>
+
+<h2>
+<a name="user-content-blockquotes" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#blockquotes" rel="noreferrer"><span class="octicon octicon-link"></span></a>Blockquotes</h2>
+
+<p>For quoting blocks of content from another source within your document.</p>
+
+<p>Add <code>&gt;</code> before any text you want to quote. </p>
+
+<div class="highlight highlight-markdown"><pre>Add <span class="pl-mr">`&gt;`</span> before any text you want to quote. </pre></div>
+
+<p>Renders to:</p>
+
+<blockquote>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+
+<p>and this HTML:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">blockquote</span>&gt;
+  &lt;<span class="pl-ent">p</span>&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/<span class="pl-ent">p</span>&gt;
+&lt;/<span class="pl-ent">blockquote</span>&gt;</pre></div>
+
+<p>Blockquotes can also be nested:</p>
+
+<div class="highlight highlight-markdown"><pre><span class="pl-mq">&gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. </span>
+<span class="pl-mq"></span>Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. 
+<span class="pl-mq">&gt;<span class="pl-mq">&gt; Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor </span></span>
+<span class="pl-mq"><span class="pl-mq"></span></span>odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.
+<span class="pl-mq">&gt;<span class="pl-mq">&gt;<span class="pl-mq">&gt; Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. </span></span></span>
+<span class="pl-mq"><span class="pl-mq"><span class="pl-mq"></span></span></span>Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </pre></div>
+
+<p>Renders to:</p>
+
+<blockquote>
+<p>Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. 
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
+
+<blockquote>
+<p>Sed adipiscing elit vitae augue consectetur a gravida nunc vehicula. Donec auctor 
+odio non est accumsan facilisis. Aliquam id turpis in dolor tincidunt mollis ac eu diam.</p>
+
+<blockquote>
+<p>Donec massa lacus, ultricies a ullamcorper in, fermentum sed augue. 
+Nunc augue augue, aliquam non hendrerit ac, commodo vel nisi. </p>
+</blockquote>
+</blockquote>
+</blockquote>
+
+<p><br>
+<br>
+<br></p>
+
+<h2 id = "lists">Lists</h2>
+
+<h3>
+<a name="user-content-unordered" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#unordered" rel="noreferrer"><span class="octicon octicon-link"></span></a>Unordered</h3>
+
+<p>A list of items in which the order of the items does not explicitly matter.</p>
+
+<p>You may use any of the following symbols to denote bullets for each list item:</p>
+
+<div class="highlight highlight-markdown"><pre><span class="pl-ml">* valid bullet</span>
+<span class="pl-ml">- valid bullet</span>
+<span class="pl-ml">+ valid bullet</span></pre></div>
+
+<p>For example</p>
+
+<div class="highlight highlight-markdown"><pre><span class="pl-ml">+ Lorem ipsum dolor sit amet</span>
+<span class="pl-ml">+ Consectetur adipiscing elit</span>
+<span class="pl-ml">+ Integer molestie lorem at massa</span>
+<span class="pl-ml">+ Facilisis in pretium nisl aliquet</span>
+<span class="pl-ml">+ Nulla volutpat aliquam velit</span>
+<span class="pl-ml">  - Phasellus iaculis neque</span>
+<span class="pl-ml">  - Purus sodales ultricies</span>
+<span class="pl-ml">  - Vestibulum laoreet porttitor sem</span>
+<span class="pl-ml">  - Ac tristique libero volutpat at</span>
+<span class="pl-ml">+ Faucibus porta lacus fringilla vel</span>
+<span class="pl-ml">+ Aenean sit amet erat nunc</span>
+<span class="pl-ml">+ Eget porttitor lorem</span></pre></div>
+
+<p>Renders to:</p>
+
+<ul class="task-list">
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit
+
+<ul class="task-list">
+<li>Phasellus iaculis neque</li>
+<li>Purus sodales ultricies</li>
+<li>Vestibulum laoreet porttitor sem</li>
+<li>Ac tristique libero volutpat at</li>
+</ul>
+</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ul>
+
+<p>And this HTML</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">ul</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Lorem ipsum dolor sit amet&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Consectetur adipiscing elit&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Integer molestie lorem at massa&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Facilisis in pretium nisl aliquet&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Nulla volutpat aliquam velit
+    &lt;<span class="pl-ent">ul</span>&gt;
+      &lt;<span class="pl-ent">li</span>&gt;Phasellus iaculis neque&lt;/<span class="pl-ent">li</span>&gt;
+      &lt;<span class="pl-ent">li</span>&gt;Purus sodales ultricies&lt;/<span class="pl-ent">li</span>&gt;
+      &lt;<span class="pl-ent">li</span>&gt;Vestibulum laoreet porttitor sem&lt;/<span class="pl-ent">li</span>&gt;
+      &lt;<span class="pl-ent">li</span>&gt;Ac tristique libero volutpat at&lt;/<span class="pl-ent">li</span>&gt;
+    &lt;/<span class="pl-ent">ul</span>&gt;
+  &lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Faucibus porta lacus fringilla vel&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Aenean sit amet erat nunc&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Eget porttitor lorem&lt;/<span class="pl-ent">li</span>&gt;
+&lt;/<span class="pl-ent">ul</span>&gt;</pre></div>
+
+<h3>
+<a name="user-content-ordered" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#ordered" rel="noreferrer"><span class="octicon octicon-link"></span></a>Ordered</h3>
+
+<p>A list of items in which the order of items does explicitly matter.</p>
+
+<div class="highlight highlight-markdown"><pre><span class="pl-ml">1. Lorem ipsum dolor sit amet</span>
+<span class="pl-ml">2. Consectetur adipiscing elit</span>
+<span class="pl-ml">3. Integer molestie lorem at massa</span>
+<span class="pl-ml">4. Facilisis in pretium nisl aliquet</span>
+<span class="pl-ml">5. Nulla volutpat aliquam velit</span>
+<span class="pl-ml">6. Faucibus porta lacus fringilla vel</span>
+<span class="pl-ml">7. Aenean sit amet erat nunc</span>
+<span class="pl-ml">8. Eget porttitor lorem</span></pre></div>
+
+<p>Renders to:</p>
+
+<ol class="task-list">
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+
+<p>And this HTML:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">ol</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Lorem ipsum dolor sit amet&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Consectetur adipiscing elit&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Integer molestie lorem at massa&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Facilisis in pretium nisl aliquet&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Nulla volutpat aliquam velit&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Faucibus porta lacus fringilla vel&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Aenean sit amet erat nunc&lt;/<span class="pl-ent">li</span>&gt;
+  &lt;<span class="pl-ent">li</span>&gt;Eget porttitor lorem&lt;/<span class="pl-ent">li</span>&gt;
+&lt;/<span class="pl-ent">ol</span>&gt;</pre></div>
+
+<p><strong>TIP</strong>: If you just use <code>1.</code> for each number, GitHub will automatically number each item. For example:</p>
+
+<div class="highlight highlight-markdown"><pre><span class="pl-ml">1. Lorem ipsum dolor sit amet</span>
+<span class="pl-ml">1. Consectetur adipiscing elit</span>
+<span class="pl-ml">1. Integer molestie lorem at massa</span>
+<span class="pl-ml">1. Facilisis in pretium nisl aliquet</span>
+<span class="pl-ml">1. Nulla volutpat aliquam velit</span>
+<span class="pl-ml">1. Faucibus porta lacus fringilla vel</span>
+<span class="pl-ml">1. Aenean sit amet erat nunc</span>
+<span class="pl-ml">1. Eget porttitor lorem</span></pre></div>
+
+<p>Renders to:</p>
+
+<ol class="task-list">
+<li>Lorem ipsum dolor sit amet</li>
+<li>Consectetur adipiscing elit</li>
+<li>Integer molestie lorem at massa</li>
+<li>Facilisis in pretium nisl aliquet</li>
+<li>Nulla volutpat aliquam velit</li>
+<li>Faucibus porta lacus fringilla vel</li>
+<li>Aenean sit amet erat nunc</li>
+<li>Eget porttitor lorem</li>
+</ol>
+
+<p><br>
+<br>
+<br></p>
+
+<h2 id = "code">Code</h2>
+
+<h3>
+<a name="user-content-inline-code" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#inline-code" rel="noreferrer"><span class="octicon octicon-link"></span></a>Inline code</h3>
+
+<p>Wrap inline snippets of code with <code>`</code>.</p>
+
+<p>For example, <code>&lt;section&gt;&lt;/section&gt;</code> should be wrapped as "inline".</p>
+
+<div class="highlight highlight-html"><pre>For example, `&lt;<span class="pl-ent">section</span>&gt;&lt;/<span class="pl-ent">section</span>&gt;` should be wrapped as "inline".</pre></div>
+
+<h3>
+<a name="user-content-indented-code" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#indented-code" rel="noreferrer"><span class="octicon octicon-link"></span></a>Indented code</h3>
+
+<p>Or indent several lines of code by at least four spaces, as in:</p>
+
+<div class="highlight highlight-js"><pre>    <span class="pl-c">// Some comments</span>
+    line <span class="pl-c1">1</span> of code
+    line <span class="pl-c1">2</span> of code
+    line <span class="pl-c1">3</span> of code</pre></div>
+
+<pre><code class="cs"><span class="comment">// Some comments</span>
+line <span class="number">1</span> of code
+line <span class="number">2</span> of code
+line <span class="number">3</span> of code
+</code></pre>
+
+<h3>
+<a name="user-content-block-code-fences" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#block-code-fences" rel="noreferrer"><span class="octicon octicon-link"></span></a>Block code "fences"</h3>
+
+<p>Use "fences"  <code>```</code> to block in multiple lines of code. </p>
+
+<pre>``` html
+Sample text here...
+```
+</pre>
+
+<pre><code class="undefined">Sample text here...
+</code></pre>
+
+<p>HTML:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">pre</span>&gt;
+  &lt;<span class="pl-ent">p</span>&gt;Sample text here...&lt;/<span class="pl-ent">p</span>&gt;
+&lt;/<span class="pl-ent">pre</span>&gt;</pre></div>
+
+<h3>
+<a name="user-content-syntax-highlighting" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#syntax-highlighting" rel="noreferrer"><span class="octicon octicon-link"></span></a>Syntax highlighting</h3>
+
+<p>GFM, or "GitHub Flavored Markdown" also supports syntax highlighting. To activate it, simply add the file extension of the language you want to use directly after the first code "fence", <code></code>`<code>js</code>, and syntax highlighting will automatically be applied in the rendered HTML. For example, to apply syntax highlighting to JavaScript code:</p>
+
+<pre>``` javascript
+grunt.initConfig({
+  assemble: {
+    options: {
+      assets: 'docs/assets',
+      data: 'src/data/*.{json,yml}',
+      helpers: 'src/custom-helpers.js',
+      partials: ['src/partials/**/*.{hbs,md}']
+    },
+    pages: {
+      options: {
+        layout: 'default.hbs'
+      },
+      files: {
+        './': ['src/templates/pages/index.hbs']
+      }
+    }
+  }
+};
+```
+</pre>
+
+<p>Renders to:</p>
+
+<div class="highlight highlight-javascript"><pre>grunt.initConfig({
+  assemble<span class="pl-k">:</span> {
+    options<span class="pl-k">:</span> {
+      assets<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>docs/assets<span class="pl-pds">'</span></span>,
+      data<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>src/data/*.{json,yml}<span class="pl-pds">'</span></span>,
+      helpers<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>src/custom-helpers.js<span class="pl-pds">'</span></span>,
+      partials<span class="pl-k">:</span> [<span class="pl-s1"><span class="pl-pds">'</span>src/partials/**/*.{hbs,md}<span class="pl-pds">'</span></span>]
+    },
+    pages<span class="pl-k">:</span> {
+      options<span class="pl-k">:</span> {
+        layout<span class="pl-k">:</span> <span class="pl-s1"><span class="pl-pds">'</span>default.hbs<span class="pl-pds">'</span></span>
+      },
+      files<span class="pl-k">:</span> {
+        <span class="pl-s1"><span class="pl-pds">'</span>./<span class="pl-pds">'</span></span><span class="pl-k">:</span> [<span class="pl-s1"><span class="pl-pds">'</span>src/templates/pages/index.hbs<span class="pl-pds">'</span></span>]
+      }
+    }
+  }
+};</pre></div>
+
+<p>And this complicated HTML:</p>
+
+<div class="highlight highlight-xml"><pre>&lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>highlight<span class="pl-pds">"</span></span>&gt;&lt;<span class="pl-ent">pre</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;grunt&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;.&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;initConfig&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;({&lt;/<span class="pl-ent">span</span>&gt;
+  &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;assemble&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>o<span class="pl-pds">"</span></span>&gt;:&lt;/<span class="pl-ent">span</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;{&lt;/<span class="pl-ent">span</span>&gt;
+    &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;options&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>o<span class="pl-pds">"</span></span>&gt;:&lt;/<span class="pl-ent">span</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;{&lt;/<span class="pl-ent">span</span>&gt;
+      &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;assets&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>o<span class="pl-pds">"</span></span>&gt;:&lt;/<span class="pl-ent">span</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>s1<span class="pl-pds">"</span></span>&gt;'docs/assets'&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;,&lt;/<span class="pl-ent">span</span>&gt;
+      &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;data&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>o<span class="pl-pds">"</span></span>&gt;:&lt;/<span class="pl-ent">span</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>s1<span class="pl-pds">"</span></span>&gt;'src/data/*.{json,yml}'&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;,&lt;/<span class="pl-ent">span</span>&gt;
+      &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;helpers&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>o<span class="pl-pds">"</span></span>&gt;:&lt;/<span class="pl-ent">span</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>s1<span class="pl-pds">"</span></span>&gt;'src/custom-helpers.js'&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;,&lt;/<span class="pl-ent">span</span>&gt;
+      &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;partials&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>o<span class="pl-pds">"</span></span>&gt;:&lt;/<span class="pl-ent">span</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;[&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>s1<span class="pl-pds">"</span></span>&gt;'src/partials/**/*.{hbs,md}'&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;]&lt;/<span class="pl-ent">span</span>&gt;
+    &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;},&lt;/<span class="pl-ent">span</span>&gt;
+    &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;pages&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>o<span class="pl-pds">"</span></span>&gt;:&lt;/<span class="pl-ent">span</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;{&lt;/<span class="pl-ent">span</span>&gt;
+      &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;options&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>o<span class="pl-pds">"</span></span>&gt;:&lt;/<span class="pl-ent">span</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;{&lt;/<span class="pl-ent">span</span>&gt;
+        &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;layout&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>o<span class="pl-pds">"</span></span>&gt;:&lt;/<span class="pl-ent">span</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>s1<span class="pl-pds">"</span></span>&gt;'default.hbs'&lt;/<span class="pl-ent">span</span>&gt;
+      &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;},&lt;/<span class="pl-ent">span</span>&gt;
+      &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>nx<span class="pl-pds">"</span></span>&gt;files&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>o<span class="pl-pds">"</span></span>&gt;:&lt;/<span class="pl-ent">span</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;{&lt;/<span class="pl-ent">span</span>&gt;
+        &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>s1<span class="pl-pds">"</span></span>&gt;'./'&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>o<span class="pl-pds">"</span></span>&gt;:&lt;/<span class="pl-ent">span</span>&gt; &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;[&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>s1<span class="pl-pds">"</span></span>&gt;'src/templates/pages/index.hbs'&lt;/<span class="pl-ent">span</span>&gt;&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;]&lt;/<span class="pl-ent">span</span>&gt;
+      &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;}&lt;/<span class="pl-ent">span</span>&gt;
+    &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;}&lt;/<span class="pl-ent">span</span>&gt;
+  &lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;}&lt;/<span class="pl-ent">span</span>&gt;
+&lt;<span class="pl-ent">span</span> <span class="pl-e">class</span>=<span class="pl-s1"><span class="pl-pds">"</span>p<span class="pl-pds">"</span></span>&gt;};&lt;/<span class="pl-ent">span</span>&gt;
+&lt;/<span class="pl-ent">pre</span>&gt;&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<p><br>
+<br>
+<br></p>
+
+<h2 id = "tables">Tables</h2>
+
+<p>Tables are created by adding pipes as dividers between each cell, and by adding a line of dashes (also separated by bars) beneath the header. Note that the pipes do not need to be vertically aligned.</p>
+
+<div class="highlight highlight-markdown"><pre>| Option | Description |
+| ------ | ----------- |
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |</pre></div>
+
+<p>Renders to:</p>
+
+<table>
+<thead>
+<tr>
+<th>Option</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>data</td>
+<td>path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td>engine</td>
+<td>engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td>ext</td>
+<td>extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+
+<p>And this HTML:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">table</span>&gt;
+  &lt;<span class="pl-ent">tr</span>&gt;
+    &lt;<span class="pl-ent">th</span>&gt;Option&lt;/<span class="pl-ent">th</span>&gt;
+    &lt;<span class="pl-ent">th</span>&gt;Description&lt;/<span class="pl-ent">th</span>&gt;
+  &lt;/<span class="pl-ent">tr</span>&gt;
+  &lt;<span class="pl-ent">tr</span>&gt;
+    &lt;<span class="pl-ent">td</span>&gt;data&lt;/<span class="pl-ent">td</span>&gt;
+    &lt;<span class="pl-ent">td</span>&gt;path to data files to supply the data that will be passed into templates.&lt;/<span class="pl-ent">td</span>&gt;
+  &lt;/<span class="pl-ent">tr</span>&gt;
+  &lt;<span class="pl-ent">tr</span>&gt;
+    &lt;<span class="pl-ent">td</span>&gt;engine&lt;/<span class="pl-ent">td</span>&gt;
+    &lt;<span class="pl-ent">td</span>&gt;engine to be used for processing templates. Handlebars is the default.&lt;/<span class="pl-ent">td</span>&gt;
+  &lt;/<span class="pl-ent">tr</span>&gt;
+  &lt;<span class="pl-ent">tr</span>&gt;
+    &lt;<span class="pl-ent">td</span>&gt;ext&lt;/<span class="pl-ent">td</span>&gt;
+    &lt;<span class="pl-ent">td</span>&gt;extension to be used for dest files.&lt;/<span class="pl-ent">td</span>&gt;
+  &lt;/<span class="pl-ent">tr</span>&gt;
+&lt;/<span class="pl-ent">table</span>&gt;</pre></div>
+
+<h3>
+<a name="user-content-right-aligned-text" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#right-aligned-text" rel="noreferrer"><span class="octicon octicon-link"></span></a>Right aligned text</h3>
+
+<p>Adding a colon on the right side of the dashes below any heading will right align text for that column.</p>
+
+<div class="highlight highlight-markdown"><pre>| Option | Description |
+| ------:| -----------:|
+| data   | path to data files to supply the data that will be passed into templates. |
+| engine | engine to be used for processing templates. Handlebars is the default. |
+| ext    | extension to be used for dest files. |</pre></div>
+
+<table>
+<thead>
+<tr>
+<th align="right">Option</th>
+<th align="right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">data</td>
+<td align="right">path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td align="right">engine</td>
+<td align="right">engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td align="right">ext</td>
+<td align="right">extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table>
+
+<p><br>
+<br>
+<br></p>
+
+<h2 id = "links">Links</h2>
+
+<h3>
+<a name="user-content-basic-link" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#basic-link" rel="noreferrer"><span class="octicon octicon-link"></span></a>Basic link</h3>
+
+<div class="highlight highlight-markdown"><pre><span class="pl-pds">[</span><span class="pl-s1">Assemble</span><span class="pl-pds">]</span>(http://assemble.io)</pre></div>
+
+<p>Renders to (hover over the link, there is no tooltip):</p>
+
+<p><a href="http://assemble.io/" rel="noreferrer">Assemble</a></p>
+
+<p>HTML:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s1"><span class="pl-pds">"</span>http://assemble.io<span class="pl-pds">"</span></span>&gt;Assemble&lt;/<span class="pl-ent">a</span>&gt;</pre></div>
+
+<h3>
+<a name="user-content-add-a-title" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#add-a-title" rel="noreferrer"><span class="octicon octicon-link"></span></a>Add a title</h3>
+
+<div class="highlight highlight-markdown"><pre><span class="pl-pds">[</span><span class="pl-s1">Upstage</span><span class="pl-pds">]</span>(https://github.com/upstage/ <span class="pl-s1"><span class="pl-pds">"</span>Visit Upstage!<span class="pl-pds">"</span></span>)</pre></div>
+
+<p>Renders to (hover over the link, there should be a tooltip):</p>
+
+<p><a href="https://github.com/upstage/" title="Visit Upstage!" rel="noreferrer">Upstage</a></p>
+
+<p>HTML:</p>
+
+<div class="highlight highlight-html"><pre>&lt;<span class="pl-ent">a</span> <span class="pl-e">href</span>=<span class="pl-s1"><span class="pl-pds">"</span>https://github.com/upstage/<span class="pl-pds">"</span></span> <span class="pl-e">title</span>=<span class="pl-s1"><span class="pl-pds">"</span>Visit Upstage!<span class="pl-pds">"</span></span>&gt;Upstage&lt;/<span class="pl-ent">a</span>&gt;</pre></div>
+
+<h3>
+<a name="user-content-named-anchors" class="anchor" href="http://assemble.io/docs/Cheatsheet-Markdown.html#named-anchors" rel="noreferrer"><span class="octicon octicon-link"></span></a>Named Anchors</h3>
+
+<p>Named anchors enable you to jump to the specified anchor point on the same page. For example, each of these chapters:</p>
+
+<div class="highlight highlight-markdown"><pre># Table of Contents
+  * <span class="pl-pds">[</span><span class="pl-s1">Chapter 1</span><span class="pl-pds">]</span>(#chapter-1)
+  * <span class="pl-pds">[</span><span class="pl-s1">Chapter 2</span><span class="pl-pds">]</span>(#chapter-2)
+  * <span class="pl-pds">[</span><span class="pl-s1">Chapter 3</span><span class="pl-pds">]</span>(#chapter-3)</pre></div>
+
+<p>will jump to these sections:</p>
+
+<div class="highlight highlight-markdown"><pre>## Chapter 1 &lt;<span class="pl-ent">a</span> <span class="pl-e">id</span>=<span class="pl-s1"><span class="pl-pds">"</span>chapter-1<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">a</span>&gt;
+Content for chapter one.
+
+## Chapter 2 &lt;<span class="pl-ent">a</span> <span class="pl-e">id</span>=<span class="pl-s1"><span class="pl-pds">"</span>chapter-2<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">a</span>&gt;
+Content for chapter one.
+
+## Chapter 3 &lt;<span class="pl-ent">a</span> <span class="pl-e">id</span>=<span class="pl-s1"><span class="pl-pds">"</span>chapter-3<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">a</span>&gt;
+Content for chapter one.</pre></div>
+
+<p><strong>NOTE</strong> that specific placement of the anchor tag seems to be arbitrary. They are placed inline here since it seems to be unobtrusive, and it works.</p>
+
+<p><br>
+<br>
+<br></p>
+
+<h2 id = "images" > Images</h2>
+
+<p>Images have a similar syntax to links but include a preceding exclamation point.</p>
+
+<div class="highlight highlight-markdown"><pre>!<span class="pl-pds">[</span><span class="pl-s1">Minion</span><span class="pl-pds">]</span>(http://octodex.github.com/images/minion.png)</pre></div>
+
+<p><a href="https://camo.githubusercontent.com/21dbea15b90151a65e7f77d17be4270619e0c10f/687474703a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f6d696e696f6e2e706e67" target="_blank" rel="noreferrer"><img src="https://camo.githubusercontent.com/21dbea15b90151a65e7f77d17be4270619e0c10f/687474703a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f6d696e696f6e2e706e67" alt="Minion" data-canonical-src="http://octodex.github.com/images/minion.png" style="max-width:100%;"></a></p>
+
+<p>or</p>
+
+<div class="highlight highlight-markdown"><pre>!<span class="pl-pds">[</span><span class="pl-s1">Alt text</span><span class="pl-pds">]</span>(http://octodex.github.com/images/stormtroopocat.jpg <span class="pl-s1"><span class="pl-pds">"</span>The Stormtroopocat<span class="pl-pds">"</span></span>)</pre></div>
+
+<p><a href="https://camo.githubusercontent.com/6f1e9bd4ebd02f42ff14f7960b783a647d3458be/687474703a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f73746f726d74726f6f706f6361742e6a7067" target="_blank" rel="noreferrer"><img src="https://camo.githubusercontent.com/6f1e9bd4ebd02f42ff14f7960b783a647d3458be/687474703a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f73746f726d74726f6f706f6361742e6a7067" alt="Alt text" title="The Stormtroopocat" data-canonical-src="http://octodex.github.com/images/stormtroopocat.jpg" style="max-width:100%;"></a></p>
+
+<p>Like links, Images also have a footnote style syntax</p>
+
+<div class="highlight highlight-markdown"><pre>!<span class="pl-pds">[</span><span class="pl-s1">Alt text</span><span class="pl-pds">]</span>[<span class="pl-c1">id</span>]</pre></div>
+
+<p><a href="https://camo.githubusercontent.com/20232135c459ea65f3b35e4c779725bc789b4c9c/687474703a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f646f6a6f6361742e6a7067"><img src="https://camo.githubusercontent.com/20232135c459ea65f3b35e4c779725bc789b4c9c/687474703a2f2f6f63746f6465782e6769746875622e636f6d2f696d616765732f646f6a6f6361742e6a7067" alt="Alt text" title="The Dojocat" data-canonical-src="http://octodex.github.com/images/dojocat.jpg" style="max-width:100%;"></a></p>
+
+<p>With a reference later in the document defining the URL location:</p>
+
+<pre><code class="cs">[id]: http:<span class="comment">//octodex.github.com/images/dojocat.jpg  "The Dojocat"</span>
+</code></pre>
+
+      </article>
+    </div>
+
+
+
+          </div>
+          <div class="gist-meta">
+            <a href="https://gist.github.com/jonschlinkert/5854601/raw/markdown.md" style="float:right">view raw</a>
+            <a href="https://gist.github.com/jonschlinkert/5854601#file-markdown-md">markdown.md</a>
+            hosted with ❤ by <a href="https://github.com/">GitHub</a>
+          </div>
+        </div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./Markdown Cheatsheet_files/jquery.js"></script>
+    <script src="./Markdown Cheatsheet_files/bootstrap.min.js"></script>
+    <script src="./Markdown Cheatsheet_files/holder.js"></script>
+    <script src="./Markdown Cheatsheet_files/highlight.js"></script>
+    <script src="./Markdown Cheatsheet_files/showup.js"></script>
+    <script type="text/javascript">
+      (function(d, t) {
+        var bh = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        bh.type = 'text/javascript';
+        bh.src = '//www.bugherd.com/sidebarv2.js?apikey=fzwbtzyrop9q61cxf8wwsa';
+        s.parentNode.insertBefore(bh, s);
+      })(document, 'script');
+    </script>
+    <script>
+      $().showUp('.navbar');
+    </script>
+  
+
+</body></html>
