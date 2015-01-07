@@ -1,89 +1,48 @@
+
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Taehyoung</title>
-    <!-- Roboto Google Fonts --> 
-    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500italic,500,700italic,700,900,900italic' rel='stylesheet' type='text/css'>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-
-    <!-- Font Awesome -->
-    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
-    <style>
-        body {
-            background: url(/src/img/bg-darken.jpg) no-repeat center center fixed;
-            font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-        }
-        .center {
-            margin: 0 auto;
-            text-align: center;
-        }
-        .dropdown-menu {
-            text-align: left;
-        }
-        .footer {
-        color: white;
-   			position:fixed;
-  			bottom:0;
-  			text-align: center ;
-  			font-size: 14px ;
-  			font-family: 'Segoe UI', Frutiger, 'Frutiger Linotype', 'Dejavu Sans', 'Helvetica Neue', Arial, sans-serif;
-  			width: 600px ;
-  			height: 50px ;
-		}
-		.btn-default{
-		    background: rgba(255, 255, 255, 0.3);
-		    font-weight: 700px;
-		    color: white;
-		}
-		.korea {
-			width : 200px;
-			height: 250px;
-		}
-		.link {
-			color : white;
-			font-weight: 700px;
-		}
-    </style>
-  </head>
-  <body>
-    <div class="center">
-	<img style = "margin-top: 25px" class = "korea" src="src/img/korea.png" alt="Korea" >
-      <div style="padding-top: 0.5px; font-size:100px; color: #FFFFFF; font-weight: 100">Taehyoung Kim</div>
-      <!-- <img class = "korea" src="src/img/korea.png" alt="Korea" align="middle"> -->
-      <div class="btn-group" style="margin: 0;">
-        <a class="btn btn-info" href="https://twitter.com/tkim99">Twitter</a>
-        <a class="btn btn-primary" href="https://facebook.com/tkim0120">Facebook</a>
-        <a class="btn btn-success" href="http://github.com/poupao">Github</a>
-        <div class="btn-group animate">
-          <a class="btn btn-warning">Misc</a>
-          <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown">
-            <span class="caret"></span>
-            <span class="sr-only">Toggle Dropdown</span>
-          </button>
-          <ul class="dropdown-menu" role="menu">
-            <li><a href="http://blog.taehyoung.com">Blog</a></li>
-            <li><a href="http://md.taehyoung.com">Markdown</a></li>
-          </ul>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Taehyoung Kim">
+        <meta name="description" content="Website">
+        
+        <title>Taehyoung Kim</title>
+        
+        <link href="src/css/font-awesome.min.css" rel="stylesheet">
+        <link href="src/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <script src="src/js/jquery.js"></script>
+        <script src="src/js/webiste.js"></script>
+    </head>
+    <body>
+        <div id="home">
+            <div class="push-down"></div>
+            <div class="banner">
+<!--                 <div class="avatar">
+                    <img alt="Taehyoung" class="img-round" style="height: 100px;" src="imagelink">
+                </div> -->
+                <h1>Taehyoung Kim</h1>
+                <h2>Hi, welcome to my website.</h2>
+                <div class="social">
+                    <a href="mailto:me@taehyoung.com"><i class="fa fa-envelope-o fa-2x"></i></a>
+                    <a href="https://github.com/poupao" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                    <a href="https://facebook.com/th0120" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="http://blog.taehyoung.com" target="_blank"><i class="fa fa-pencil fa-2x"></i></a>
+                    <a href="https://twitter.com/tkim99" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-    <div class ="footer">
-    	<ul class="nav nav-pills">
-    		<li class="pull-left">
-    			<a style = "margin-left: 10px"class="btn btn-default btn-sm" href="http://taehyoung.com" role="button">&copy 2015 Taehyoung Kim</a> 
-    		</li>
-    		<li class="dropup">
-    		<!-- <a class="btn btn-default btn-sm" href="mailto:me@taehyoung.com" role="button">Contact</a>  -->
-    		<a class = "link" href="mailto:me@taehyoung.com"> Contact </a>
-    		</li>
-    	</ul>
-    </div>
-
-    <!-- jQuery -->
-    <script src="//code.jquery.com/jquery.js"></script>
-    <!-- Bootstrap-->
-    <script src="/src/js/bootstrap.min.js"></script>
-  </body>
+        <div class ="footer">
+            <ul class="nav nav-pills">
+                <li class="pull-left">
+                    <a style = "margin-left: 10px" href="http://taehyoung.com" role="button">&copy 2015 Taehyoung Kim</a> 
+                </li>
+            </ul>
+        </div>
+    <script type="text/javascript">
+/* <![CDATA[ */
+(function(){try{var s,a,i,j,r,c,l=document.getElementsByTagName("a"),t=document.createElement("textarea");for(i=0;l.length-i;i++){try{a=l[i].getAttribute("href");if(a&&a.indexOf("/cdn-cgi/l/email-protection") > -1  && (a.length > 28)){s='';j=27+ 1 + a.indexOf("/cdn-cgi/l/email-protection");if (a.length > j) {r=parseInt(a.substr(j,2),16);for(j+=2;a.length>j&&a.substr(j,1)!='X';j+=2){c=parseInt(a.substr(j,2),16)^r;s+=String.fromCharCode(c);}j+=1;s+=a.substr(j,a.length-j);}t.innerHTML=s.replace(/</g,"&lt;").replace(/>/g,"&gt;");l[i].setAttribute("href","mailto:"+t.value);}}catch(e){}}}catch(e){}})();
+/* ]]> */
+</script>
+</body>
 </html>
