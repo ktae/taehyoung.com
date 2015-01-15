@@ -1,41 +1,69 @@
-
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="author" content="Taehyoung Kim">
-        <meta name="description" content="Website">
-        
-        <title>Taehyoung Kim</title>
-        
-        <link href="src/css/font-awesome.min.css" rel="stylesheet">
-        <link href="src/css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-        <script src="src/js/jquery.js"></script>
-    </head>
-    <body>
-        <div id="home">
-            <div class="banner">
-  				<!-- <div class="avatar">
-                    <img alt="Taehyoung" class="img-round" style="height: 100px;" src="imagelink">
-                </div> -->
-                <h1>Taehyoung Kim</h1>
-                <h2>Hi, welcome to my website.</h2>
-                <div class="social">
-                    <a href="mailto:me@taehyoung.com"><i class="fa fa-envelope-o fa-2x"></i></a>
-                    <a href="https://github.com/poupao" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-                    <a href="https://facebook.com/th0120" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-                    <a href="http://blog.taehyoung.com" target="_blank"><i class="fa fa-pencil fa-2x"></i></a>
-                    <a href="https://twitter.com/tkim99" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class ="footer">
-            <ul class="nav nav-pills">
-                <li class="pull-left">
-                    <a style = "margin-left: 10px" href="http://taehyoung.com" role="button">&copy 2015 Taehyoung Kim</a> 
-                </li>
-            </ul>
-        </div>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Taehyoung Kim">
+    <meta name="description" content="Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
+
+    <title>Taehyoung</title>
+
+    <!-- FontAwesome -->
+    <link href="src/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link href="src/css/style.css" rel="stylesheet">   
+
+  </head>
+  <body>
+    <div class="container">
+    	<div class="logo">
+	    	<img src="" width="100" alt="">
+    	</div>
+		<div class="row centered">
+			<div class="col-lg-8 col-lg-offset-2 w">
+				<h1>Taehyoung Kim</h1>
+            I'm a high school student who barely speaks English, now taking on the world of programming.
+			</div>
+		</div>
+        <br/><br/><br/><br/>
+		<div class="row centered">
+			<div class="col-lg-8 col-lg-offset-2 w tooltip-demo">
+                <a data-toggle="tooltip" title="Github" href="https://github.com/poupao"><i class="fa fa-github"></i></a>
+                <a data-toggle="tooltip" title="Blog" href="http://blog.taehyoung.com"><i class="fa fa-pencil"></i></a>
+				<a data-toggle="tooltip" title="Twitter" href="https://twitter.com/tkim99"><i class="fa fa-twitter"></i></a>
+				<a data-toggle="tooltip" title="Facebook" href="https://facebook.com/tkim0120"><i class="fa fa-facebook"></i></a>
+				<a data-toggle="tooltip" title="Email!" href="mailto:me@taehyoung.com"><i class="fa fa-envelope"></i></a>
+			</div>
+		</div>
+    </div>
+    
+    <div class="container">
+    	<div class="row w centered">
+    		<br>		
+    		<div class="col-lg-6 col-lg-offset-3">
+    		</div>
+    	</div>
+    </div>
+
+    <!-- Placing JS at the end makes pages load faster.. I think -->
+    <script src="src/js/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+    $('.tooltip-demo').tooltip({
+      selector: "[data-toggle=tooltip]",
+      container: "body"
+    })
+	</script>
+
+
+    <!--Backstretch JQuery Plugin-->
+    <script type="text/javascript" src="src/js/jquery.backstretch.min.js"></script>
+    <script>
+        $.backstretch("src/css/bg.jpg", {speed: 500});
+    </script>
+
+  </body>
 </html>
