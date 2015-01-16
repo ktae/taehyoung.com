@@ -11,6 +11,7 @@ body {
 body h1{
     font-size:50px;
 }
+
 /* Titles */
 h2, h3, h4, h5, h6 {
     font-size:16px;
@@ -42,24 +43,28 @@ a {
     -o-transition: color 0.1s ease-in, background 0.1s ease-in;
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
+/* Icons */
 .fa-github:hover,
 .fa-github:hover{
     color: gray;
     text-decoration: none;
     outline: 0;
 }
+
 .fa-pencil:hover,
 .fa-pencil:hover{
     color: black;
     text-decoration: none;
     outline: 0;
 }
+
 .fa-twitter:hover,
 .fa-twitter:hover{
     color: #1dcaff;
     text-decoration: none;
     outline: 0;
 }
+
 .fa-facebook:hover,
 .fa-facebook:hover{
     color: #44609D;
@@ -107,4 +112,8 @@ h1 {
 .w i {
 	font-size: 26px;
 	padding: 12px;
+}
+/* Make tooltip appear higher */
+.tooltip.top {
+  margin-top: -10px;
 }
