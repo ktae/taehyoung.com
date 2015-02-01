@@ -1,107 +1,62 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Hello</title>
-	<style type="text/css">
-	@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
-	/* Normal State */
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Taehyoung Kim">
+    <meta name="description" content="Website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/favicon.ico">
 
-	a i.icon--catalogue{
-		display: 		   inline-block;
-		vertical-align:  middle;
-		border: 		    4px solid #f39c12;
-		width: 			   4px;
-		height: 		48px;
-		top: 			-2px;
-		position: 		relative;
-		margin: 		0 44px 0 44px;
-		perspective: 	260px;
-		transition: width 0.4s cubic-bezier(0.77, 0, 0.175, 1), transform 0.4s cubic-bezier(0.77, 0, 0.175, 1), margin 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-		transform: rotateY(0deg);
-	}
+    <title>Taehyoung</title>
 
-	a i.icon--catalogue:before{
-			content: 	'';
-			display: 	block;
-			border: 	4px solid;
-			border-color: inherit;
-			width: 		30px;
-			height: 	48px;
-			position: 	absolute;
-			top: 		-4px;
-			left: 		4px;
-			transform: rotateY(0deg);
-			transform-origin: left center;
-			transition: left 0.4s cubic-bezier(0.77, 0, 0.175, 1), transform 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-	}
+    <!-- FontAwesome and Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href="src/css/font-awesome.min.css" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link href="src/css/style.css" rel="stylesheet">   
 
-	a i.icon--catalogue:after{
-			content: 	'';
-			display: 	block;
-			background: #000;
-			border: 	4px solid;
-			border-color: inherit;
-			height: 	0px;
-			width: 		6px;
-			position: 	absolute;
-			left: 		16px;
-			top: 		4px;
-			transform: rotateY(0deg);
-	     opacity: 1;
-			transform-origin: -3px center;
-			transition: left 0.4s cubic-bezier(0.77, 0, 0.175, 1), transform 0.4s cubic-bezier(0.77, 0, 0.175, 1), opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1);
-	}
+  </head>
+  <body>
+    <div class="container">
+        <!-- Logo placeholder that I won't use right now. -->
+    	<!--<div class="logo">
+	    	<img src="" width="100" alt="">
+    	</div> -->
+        </br></br>
+		<div class="row centered">
+			<div class="col-lg-8 col-lg-offset-2 w">
+				<h1>Taehyoung Kim</h1>
+                <br/>
+            I'm a high school student who barely speaks English, now taking on the world of programming.
+			</div>
+		</div>
+        <br/><br/><br/>
+		<div class="row centered">
+			<div class="col-lg-8 col-lg-offset-2 w tooltip-demo">
+                <a data-toggle="tooltip" title="Github" href="https://github.com/poupao"><i class="fa fa-github"></i></a>
+                <a data-toggle="tooltip" title="Blog" href="http://taehyoung.com/blog"><i class="fa fa-pencil"></i></a>
+				<a data-toggle="tooltip" title="Twitter" href="https://twitter.com/tkim99"><i class="fa fa-twitter"></i></a>
+				<a data-toggle="tooltip" title="Facebook" href="https://facebook.com/tkim0120"><i class="fa fa-facebook"></i></a>
+				<a data-toggle="tooltip" title="Email!" href="mailto:me@taehyoung.com"><i class="fa fa-envelope"></i></a>
+			</div>
+		</div>
+    </div>
+    
+    <div class="container">
+    	<div class="row w centered">
+    		<br>		
+    		<div class="col-lg-6 col-lg-offset-3">
+    		</div>
+    	</div>
+    </div>
 
-
-	/* Hover State */
-	a.hover i.icon--catalogue,
-	a:hover i.icon--catalogue{
-	    width: 30px;
-	    margin: 0 10px 0 26px;
-	    transform:  rotateY(0deg);
-	}
-	a.hover i.icon--catalogue:before,			
-	a:hover i.icon--catalogue:before{
-	    left: 0px;
-	    transform: rotateY(-135deg);
-	}
-	a.hover i.icon--catalogue:after,
-	a:hover i.icon--catalogue:after{
-	    left: 0px;
-	    opacity: 0;
-	    transform: rotateY(-135deg);
-	}
-
-
-	/* General Settings */
-
-	body{
-    font-size: 30px;
-	  margin-top: 250px;
-	  text-align: center;
-	  padding: 100px 0;
-	  background: #f2f2f2;
-	}
-
-	a:link, a:visited{
-	  font-family: 'Comfortaa', cursive;
-	  color: #000;
-	  text-decoration: none;
-	  letter-spacing: 1px;
-	}
-	</style>
-</head>
-<body>
-<a href="http://taehyoung.com/home.html"><i class="icon icon--catalogue"></i> Come in!</a>
-<script type="text/javascript">
-	setTimeout(function(){
-	  $('a').addClass('hover');
-	}, 500);
-
-	setTimeout(function(){
-	  $('a').removeClass('hover');
-	}, 2000);
-
-</script>
-</body>
+    <!-- Placing JS at the end makes pages load faster.. I think -->
+    <script src="src/js/jquery-2.1.3.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <script>
+    	//tooltips
+        $(function () { $("[data-toggle='tooltip']").tooltip(); });
+	</script>
+  </body>
 </html>
