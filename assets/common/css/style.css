@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
+
 body {
   background-color: #f2f2f2;
     font-family: 'Comfortaa', cursive;
@@ -89,7 +90,7 @@ a:after {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
- hr {
+hr {
     display: block;
     height: 1px;
     border: 0;
