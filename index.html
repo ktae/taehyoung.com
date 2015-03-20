@@ -23,8 +23,8 @@
   <body>
     <div class="container">
         <!-- Logo -->
-    	<div class="logo">
-	    	<img src="assets/lib/img/logo.jpg" style="box-shadow: 2px 2px 5px 0px gray;"width = "170" height = "170" alt="Logo" class="img-circle">
+    	<div style ="text-align:center">
+	    	<img src="https://avatars2.githubusercontent.com/u/4985536?v=3&s=460" alt="Logo" class="img-rounded logo">
     	</div> 
         </br></br>
 		<div class="row centered">
@@ -50,6 +50,15 @@
     <script>
     	//tooltips
         $(function () { $("[data-toggle='tooltip']").tooltip(); });
+	</script>
+	<!--Backstretch Slideshow Plugin-->
+	<script src="assets/lib/js/jquery.backstretch.min.js"></script>
+	<script>
+		$.backstretch([
+    		"assets/lib/img/1.jpg"
+    		,"assets/lib/img/2.jpg"
+    		,"assets/lib/img/3.jpg"
+  		], {duration: 3000, fade: 750});
 	</script>
   </body>
 </html>

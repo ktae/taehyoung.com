@@ -4,7 +4,7 @@ body {
   background-color: #f2f2f2;
     font-family: 'Comfortaa', cursive;
     font-weight: 300;
-    color: #555;
+    color: #CFCFCF;
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
 }
@@ -23,6 +23,7 @@ h2, h3, h4, h5, h6 {
 }
 
 
+
 /* Paragraph */
 p {
     line-height: 28px;
@@ -36,7 +37,7 @@ p {
 
 /* Links */
 a {
-    color: #f39c12;
+    color: #CFCFCF;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -74,7 +75,8 @@ a {
     outline: 0;
 }
 
-a:hover,
+/* Default Link */
+/*a:hover,
 a:focus {
     color: green;
     text-decoration: none;
@@ -97,13 +99,14 @@ hr {
     border-top: 1px solid #ccc;
     margin: 1em 0;
     padding: 0;
-}
+}*/
 
 .logo {
-	text-align: center;
 	margin-top: 100px;
+    box-shadow: 2px 2px 5px 0px gray;
+    width :140px;
+    height :140px;
 }
-
 
 .w {
 	margin-top: 5px;
