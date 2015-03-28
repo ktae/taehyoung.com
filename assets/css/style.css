@@ -1,34 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
 
+/* Typography and background stuff */
 body {
-  background-color: #f2f2f2;
+    background-image: url(http://taehyoung.com/assets/img/bg.jpg);
+    background-color: #f2f2f2;
     font-family: 'Comfortaa', cursive;
     font-weight: 300;
-    color: #CFCFCF;
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
 }
 
-body h1{
+h1{
+    color: #CFCFCF;
     font-size:50px;
     font-weight: 700;
 }
 
-/* Titles */
-h2, h3, h4, h5, h6 {
-    font-size:16px;
-    font-family: 'Comfortaa', cursive;
-    font-weight: 300;
-    color: #333;
-}
-
-
-
-/* Paragraph */
-p {
-    line-height: 28px;
-    margin-bottom: 25px;
-    font-size: 20px;
+.intro {
+    font-size:20px;
+    color: #CFCFCF;
 }
 
 .centered {
