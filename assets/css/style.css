@@ -9,14 +9,14 @@ body {
 }
 
 h1{
-    color: #505050;
+    color: #D8D8D8;
     font-size:50px;
     font-weight: 700;
 }
 
 .intro {
     font-size:20px;
-    color: #505050 ;
+    color: #D8D8D8;
 }
 
 .centered {
@@ -25,7 +25,7 @@ h1{
 
 /* Links */
 a {
-    color: #505050;
+    color: #D8D8D8;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
