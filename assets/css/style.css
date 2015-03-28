@@ -9,14 +9,14 @@ body {
 }
 
 h1{
-    color: #CFCFCF;
+    color: #505050;
     font-size:50px;
     font-weight: 700;
 }
 
 .intro {
     font-size:20px;
-    color: #CFCFCF;
+    color: #505050 ;
 }
 
 .centered {
@@ -25,7 +25,7 @@ h1{
 
 /* Links */
 a {
-    color: #CFCFCF;
+    color: #505050;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -43,7 +43,7 @@ a {
 }
 
 .fa-pencil:hover{
-    color: black;
+    color: #800000;
     text-decoration: none;
     outline: 0;
 }
