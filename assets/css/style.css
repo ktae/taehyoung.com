@@ -2,21 +2,21 @@
 
 /* Typography and background stuff */
 body {
-    background-image: url(http://taehyoung.com/assets/img/bg.jpg);
+    /*background-image: url(http://taehyoung.com/assets/img/bg.jpg);*/
     background-color: #f2f2f2;
     font-family: 'Comfortaa', cursive;
     font-weight: 300;
 }
 
 h1{
-    color: #D8D8D8;
+    color: black;
     font-size:50px;
     font-weight: 700;
 }
 
 .intro {
     font-size:20px;
-    color: #D8D8D8;
+    color: black;
 }
 
 .centered {
@@ -25,7 +25,7 @@ h1{
 
 /* Links */
 a {
-    color: #D8D8D8;
+    color: gray;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -37,7 +37,7 @@ a {
 /* Icons */
 
 .fa-github:hover{
-    color: gray;
+    color: black;
     text-decoration: none;
     outline: 0;
 }
