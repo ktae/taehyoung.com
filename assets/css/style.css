@@ -1,95 +1,338 @@
-@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,700);
+body, html {
+    height:100%;
+}
 
-/* Typography and background stuff */
 body {
-    /*background-image: url(http://taehyoung.com/assets/img/bg.jpg);*/
-    background-color: #f2f2f2;
-    font-family: 'Comfortaa', cursive;
-    font-weight: 300;
+    font-family:"adobe-garamond-pro", Times New Roman, serif;
+    font-size:18.5px;
+    line-height:27px;
+    letter-spacing:0;
+    color:#242625;
+    background:#FDFDFB;
+    padding:0;
 }
 
-h1{
-    color: black;
-    font-size:50px;
-    font-weight: 700;
+a:link, a:visited, a:active {
+    color:#858585;
+    text-decoration:none;
 }
 
-.intro {
-    font-size:20px;
-    color: black;
+a:hover {
+    text-decoration:underline;
 }
 
-.centered {
-    text-align: center;
+.center {
+    text-align:center;
 }
 
-/* Links */
-a {
-    color: gray;
-    word-wrap: break-word;
-
-    -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
-    -o-transition: color 0.1s ease-in, background 0.1s ease-in;
-    transition: color 0.1s ease-in, background 0.1s ease-in;
-}
-/* Icons */
-
-.fa-github:hover{
-    color: black;
-    text-decoration: none;
-    outline: 0;
+h2 {
+    font-size:34px;
+    line-height:48px;
+    font-weight:normal;
+    letter-spacing:0.16em;
 }
 
-.fa-pencil:hover{
-    color: #800000;
-    text-decoration: none;
-    outline: 0;
+h3 {
+    font-size:48px;
+    line-height:56px;
+    font-weight:normal;
+    letter-spacing:0.16em;
 }
 
-.fa-twitter:hover{
-    color: #1dcaff;
-    text-decoration: none;
-    outline: 0;
+h4 {
+    font-size:18px;
+    line-height:26px;
+    font-weight:600;
+    letter-spacing:0.16em;
 }
 
-.fa-facebook:hover{
-    color: #44609D;
-    text-decoration: none;
-    outline: 0;
+.social {
+    margin-top:66px;
+    list-style:none;
 }
-.fa-envelope:hover{
-    color: green;
-    text-decoration: none;
-    outline: 0;
+
+.social li {
+    display:inline-block;
+    margin-left:15px;
+}
+
+.social li:first-child {
+    margin-left:0;
+}
+
+#content {
+    min-height:100%;
+    border: 10px solid #242625;
+    /* padding:76px 0; */
+    margin-top:-20px;
+}
+
+#content .wrapper {
+    padding:96px 0 20px;
+}
+
+#top {
+    height:10px;
+    position:fixed;
+    top:0;
+    width:100%;
+    background:#242625;
+    z-index:10000;
+}
+
+#bottom {
+    height:10px;
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background:#242625;
+    z-index:10000;
+}
+
+#logo {
+    position:fixed;
+    background:rgba(253,253,251,0.75);
+}
+
+nav {
+    font-family:"new-cicle", Helvetica, arial, sans-serif;
+    font-weight:500;
+    text-transform:uppercase;
+    text-align:right;
+    font-size:16px;
+    letter-spacing:0.4em;
+}
+nav li {
+    margin-bottom:7px;
+}
+
+nav a:link, nav a:visited, nav a:active {
+    color:#000;
+}
+
+.nav > li > a:hover {
+    background:none;
+    font-weight:700;
+}
+
+nav li.active a, nav li.active a:link {
+    color:#858585;
+}
+
+.spacer {
+    margin:18px 0;
+}
+
+section {
+    margin-top:66px;
+    text-align:right;
+}
+
+.divider {
+    border-top:1px solid #000;
+    padding-top:66px;
 }
 
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+@media (min-width: 1200px) {
+    #content .wrapper {
+        
+    }
 }
 
-.logo {
-	margin-top: 50px;
-    box-shadow: 2px 2px 5px 0px gray;
-    width :140px;
-    height :140px;
+@media (min-width: 1101px) and (max-width: 1259px) {
+    /* 220x163 */
+    .thumbnails a .caption {
+        margin-top:-163px;
+        width:220px;
+        height:20px;
+        padding:58px 0 85px;
+        text-align:center;
+    }
+    
 }
 
-.w {
-	margin-top: 5px;
+@media (min-width: 886px) and (max-width: 1100px) {
+    #content .wrapper {
+        padding:70px 50px 50px;
+    }
+    
+    /* 166x123 */
+    .thumbnails a .caption {
+        
+        margin-top:-123px;
+        width:156px;
+        height:40px;
+        padding:28px 5px 55px;
+        text-align:center;
+        font-size:15px;
+    }
+    
+    .thumbnails a .caption h4 {
+        font-size:16px;
+        line-height:20px;
+    }
+    
+    .text-content {
+        margin-left:268px;
+        width:476px;
+    }
+    
+    h2 {
+        font-size:31px;
+    }
 }
-.w i {
-	font-size: 26px;
-	padding: 12px;
+
+@media (max-width: 885px) {
+    /*nav {
+        font-size:20px;
+        margin-top:60px;
+    }
+    
+    nav li {
+        margin-bottom:24px;
+    } */
+    
+    body {
+        font-size:18px;
+        line-height:25px;
+        letter-spacing:0.05em;
+    }
+    
+    h2 {
+        font-size:34px;
+        line-height:48px;
+        font-weight:normal;
+        letter-spacing:0.16em;
+    }
+    
+    #logo {
+        position:relative;
+        background:none;
+    }
+    
+    #content .wrapper {
+        padding:70px 50px 50px;
+    }
+    
+    .thumbnails li {
+        margin-left:0;
+        margin-right:35px;
+        width:305px;
+    }
+    
+    .thumbnails li:nth-child(even) {
+        margin-right:0;
+    }
+    
+    .logo-wrapper {
+        float:left;
+    }
+    
+    .thumbnails li .caption {
+        display:block;
+        background:none;
+        position:relative;
+        margin:0;
+        height:auto;
+        padding:0;
+        border:none;
+        text-align:right;
+        width:auto;
+    }
+    
+    .thumbnails li .caption h4 {
+        font-size:15px;
+        display:inline;
+        letter-spacing:0.06em;
+    }
+    
+    .thumbnails li .caption p {
+        display:inline;
+        font-size:15px;
+        letter-spacing:0.06em;
+    }
+    
+    .thumbnails li a:hover img {
+        opacity:1;
+    }
+    
+    .work img:last-child {
+        margin-bottom:30px;
+    }
+    
+    .text-content {
+        margin-left:160px;
+    }
+    
+    h2 {
+        font-size:31px;
+    }
+    
 }
-/* Make tooltip appear higher */
-.tooltip.top {
-  margin-top: -10px;
+
+@media (max-width: 700px) {
+   .text-content {
+        margin-left:0;
+    }
+    
+    .logo-wrapper {
+        float:none;
+    } 
 }
+
+@media (max-width: 480px) {
+    
+    body {
+        font-size:13px;
+        line-height:17px;
+        letter-spacing:0.07em;
+    }
+    
+    h2 {
+        font-size:16px;
+        line-height:25px;
+        letter-spacing:0.1em;
+        font-weight:600;
+    }
+    
+    #content .wrapper {
+        padding:50px 30px 30px;
+    }
+    
+    nav {
+        font-size:20px;
+        margin-top:60px;
+    }
+    
+    nav li {
+        margin-bottom:24px;
+    }
+    
+    .thumbnails li {
+        margin-right:0;
+        width:auto;
+        display:block;
+        float:none;
+    }
+    
+    .thumbnails li a img {
+        width:100%;
+    }
+    
+    .work img:last-child {
+        margin-bottom:30px;
+    }
+}
+
+@media (max-width: 320px) {
+    
+    .thumbnails li {
+        display:block;
+        float:none;
+        margin-right:0;
+    }
+    
+    .thumbnails li img {
+        width:100%;
+    }
