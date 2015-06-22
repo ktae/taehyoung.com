@@ -14,12 +14,12 @@ body {
 
 a:link, a:visited, a:active {
     color:#858585;
-    text-decoration:none;
-}
+    /*text-decoration:none;
+*/}
 
-a:hover {
+/*a:hover {
     text-decoration:underline;
-}
+}*/
 
 .center {
     text-align:center;
@@ -82,9 +82,8 @@ h4 {
     z-index:10000;
 }
 
-#logo {
-    position:fixed;
-    background:rgba(253,253,251,0.75);
+img {
+    position:absolute;
 }
 
 nav {
@@ -98,10 +97,11 @@ nav {
 nav li {
     margin-bottom:7px;
 }
-
-nav a:link, nav a:visited, nav a:active {
-    color:#000;
+.nav > li > a:hover {
+    background:none;
+    font-weight:700;
 }
+
 
 .spacer {
     margin:18px 0;
@@ -116,5 +116,3 @@ section {
     border-top:1px solid #000;
     padding-top:66px;
 }
-
-
