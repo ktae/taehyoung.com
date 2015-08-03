@@ -8,6 +8,10 @@ html {
 
 body {padding:0 3em 3em}
 
+div.center{
+	text-align: center
+}
+
 #wrapper{max-width:600px;margin:0 auto}
 
 .hello{margin:2.4em 0 1em}
