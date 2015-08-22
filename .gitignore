@@ -2,3 +2,4 @@ board/**
 .htaccess
 .revision
 docs/**
+.DS_Store
