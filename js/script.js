@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function(){
     var logo = document.querySelector('.logo');
 
     // Array content
-    var titles = ['Student', 'Developer', 'Minimalist'];
+    var titles = ['Student'];
     var title = titles[Math.floor(Math.random()*titles.length)];
 
     // Initialize the typewriter
