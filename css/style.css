@@ -225,6 +225,11 @@ a.blue:hover {
     border-bottom: 1px dotted transparent
 }
 
+a.orange:hover {
+    color: darkorange;
+    border-bottom: 1px dotted transparent
+}
+
 main {
     padding-right: 5rem;
     padding-left: 5rem;
